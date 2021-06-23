@@ -26,40 +26,29 @@ Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num di
 cd "diretorio de sua preferencia" 
 git clone https://github.com/Dalescio/CreditoParaTodxs.git
 ```
+
 Será necessário executar os seguintes comandos:
--
--cp en.exemplo .env
--É necessário criar um banco de dados no Laragon:
-    -Clicando em **Banco de Dados**
-    -Apertar no canto inferior esquerdo **Novo**
-    -Apertar em **Abrir**
-    -Clicar com o botão direito em **Unnamed**
-    -Passar o mouse em cima de **Criar novo** e depois apertar em **Banco de dados**
-    -Botar o nome como **banco** (tudo minúsculo) e clicar em **OK**
+- Executar o **Laragon**
+- Ir no canto inferior direito na opção **Root**
+- Colar a pasta ja extraida
+- Voltar no Laragon
+- Entrar na opção **Terminal**
+- Digitar **cd  CreditoParaTodxs-master**
+- Digitar **code .**
+- Ir no arquivo .env.exemplo e mudar a **DB_DATABASE=** e colocar **banco** ficando **DB_DATABASE=banco**
+- Digitar no terminal do Visual Studio **cp .env.exemplo .env**
+- É necessário criar um banco de dados no Laragon:
+    - Clicando em **Banco de Dados**
+    - Apertar no canto inferior esquerdo **Novo**
+    - Apertar em **Abrir**
+    - Clicar com o botão direito em **Unnamed**
+    - Passar o mouse em cima de **Criar novo** e depois apertar em **Banco de dados**
+    - Botar o nome como **banco** (tudo minúsculo) e clicar em **OK**
+    - Apertar em **Iniciar tudo**
+- Digitar no Terminal do Visual Studio **composer install**
+- No terminal do Visual Studio digitar **php artisan key:generate**
+- Digitar no terminal do Visual Studio **php artisan migrate**
+- Digitar no terminal do Visual Studio **php artisan serve**
+- Clicar no link que aparecerá com **Crt+Click**
 
-
-## Construção 
-
-Para que o cadastro seja relizado é necesario criar o Banco de dados e a tabela que irá armazenar as informações do usuário.
-
-```shell
-<!--Criação do Bnaco de dados-->
- CREATE DATABASE bemoluser;
-
- <!--Criação da Tabela-->
-  CREATE TALBLE cadastrousuarios(id_usuario INT(11) AUTO_INCREMENT PRIMARY KEY ,
-    ->  nome VARCHAR(30) NOT NULL, 
-    ->  telefone VARCHAR(30) NOT NULL,
-    ->  usuario VARCHAR(40) NOT NULL,
-    ->  senha VARCHAR(32) NOT NULL,
-    -> cep VARCHAR(10) NOT NULL,
-    -> rua VARCHAR(20) NOT NULL,
-    -> bairro VARCHAR(20) NOT NULL.
-    -> numero  VARCHAR(10) NOT NULL.
-    -> cidade VARCHAR(20) NOT NULL,
-    -> estado VARCHAR(20) NOT NULL);
-```
-## Features
-
-O projeto apresentado descreve a implementação de um cadastro de usuarios. Para futuras implementações faz-se necessário desenvolver a área do cliente onde ele poderá interagir  com o sistema por meio de ações tais como enviar uma mensagem e editar ou excluir seus dados cadastrais.
 
