@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/exibir', 'HomeController@exibir')->name('exibir');
+
+Route::get('/info', 'HomeController@lim_parcela')->name('info');

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>CódigoParaTodxs</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -109,17 +109,23 @@
             }
 
             .btn-pes{
-            background: #6246EA 0% 0% no-repeat padding-box;
-            border-radius: 5px;
-            opacity: 1;
-            width: 412px;
-            height: 106px;
-            font-size: 30px;
-            margin-top: 50px;
-            margin-left: 320px;
-            outline:none;
-            font: normal normal normal 30px/38px Quicksand;
-            color: #FFFFFE;
+                background: #6246EA 0% 0% no-repeat padding-box;
+                border-radius: 5px;
+                opacity: 1;
+                display: flex;
+                width: 412px;
+                text-decoration: none;
+                align-items: center;
+                height: 106px;
+                justify-content: center;
+                font-size: 30px;
+                margin-top: 50px;
+                margin-left: 320px;
+                outline: none;
+                font: normal normal normal 30px/38px Quicksand;
+                color: #FFFFFE;
+                border: none;
+                align-items: center;
             }
 
             .Area_Pessoal{
@@ -137,6 +143,7 @@
                 font-size: 20px;
                 margin-right: 60px;
                 margin-top:10px;
+                border: none;
 
             }
 
@@ -152,7 +159,7 @@
               <p class="desc">Com a empresa CréditoParaTodxs peça seu empréstimo <br>
                 pessoal de forma totalmente on-line e receba o dinheiro <br>
                 em até 24h com total segurança e confiança.</p>
-                <button type="button" class="btn-pes">CONTRATE AGORA</button>
+                {{-- <button type="button" class="btn-pes">CONTRATE AGORA</button> --}}
           </div>
           <div>
             <svg class="background"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="910.759" height="1010.228" viewBox="0 0 910.759 1010.228">
@@ -185,6 +192,20 @@
         @if (Route::has('register'))
             <a type="button" class="btn btn-primary " href="{{ route('register') }}">FAÇA SEU EMPRÉSTIMO</a>
         @endif
+    @endauth
+</div>
+@endif
+
+@if (Route::has('login'))
+<div >
+    @auth
+    <a type="button" class="btn-pes" href="{{ url('/home') }}">CONTRATE AGORA</a>
+    @else
+    <a type="button" class="btn-pes" href="{{ url('register') }}">CONTRATE AGORA</a>
+
+        {{-- @if (Route::has('register'))
+        <a type="button" href="{{ url('/home') }}"><button class="Area_Pessoal">CONTRATE AGORA</button></a>
+        @endif --}}
     @endauth
 </div>
 @endif

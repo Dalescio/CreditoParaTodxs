@@ -35,9 +35,16 @@ class HomeController extends Controller
 
     }
 
-    public function lim_parcela(Request $Request)
+    public function lim_parcela(Request $request)
     {
-        # code...
+       dd($request->input());
+        $limite = 0.3;
+        $userId = Auth::id();
+        $exibir = User::where('id',$userId)->get();
+        $r = $exibir->renda * $limite;
+        
+
+
     }
 
 
