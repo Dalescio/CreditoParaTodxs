@@ -15,7 +15,7 @@ O **CréditoParaTodxs** é uma aplicação desenvolvida em **PHP** que consiste 
 ## Desenvolvimento da interface
 
 - Projeto inicial desenvolvido no aplicativo AdobeXD
-- [Interface inicial](https://github.com/Dalescio/CreditoParaTodxs)
+- [Interface inicial](https://xd.adobe.com/view/5f28208a-4f8f-4da5-a833-66abfede20db-0a7b/)
 ## Começando..
 
 Para executar o projeto, será necessário instalar os seguintes programas:
