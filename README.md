@@ -1,29 +1,42 @@
-# GoRegister
+# CreditoParaTodxs
 
-![GitHub language count](https://img.shields.io/github/languages/count/KSouzaEng/GoRegister?style=flat)  ![GitHub top language](https://img.shields.io/github/languages/top/KSouzaEng/GoRegister)  ![GitHub last commit](https://img.shields.io/github/last-commit/KSouzaEng/GoRegister)
 
-O **GoRegister** é uma aplicação desenvolvida em **PHP** que consiste na implementação da funcionalidade de criação de contas de usuários. Para tanto foi desenvolvida uma interface web que permite ao cliente a interação com "um sistema" que pode ser acessado logo depois do cadastro ser realizado.
+O **CréditoParaTodxs** é uma aplicação desenvolvida em **PHP** que consiste na implementação da funcionalidade de disponiblização de crédito de maneira fácil e rápida. Para tanto foi desenvolvida uma interface web que permite ao cliente a interação com "um sistema" que permite contratar o serviço por ela.
 
 ## Linguagens utilizadas
 
-- PHP 3.0
+- PHP 7.2.5|8.0
 - HTML 5
 - CSS 3
 - MySQL
+- Laravel 6.20.26
+- JQuery 3.3.1
 
 ## Começando..
 
 Para executar o projeto, será necessário instalar os seguintes programas:
 - [Laragon: Usado para iniciar o servidor web e fazer o gerenciamento do banco de dados (PHP embutido e MySQL)](https://laragon.org/download/index.html)
 - [Visual Studio Code: Para desenvolvimento do projeto (ou editor de sua preferência)](https://code.visualstudio.com/download)
+- [Composer: é necessário para que as dependencias serem instaladas](https://getcomposer.org/download/)
 
 ## Desenvolvimento
 
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 ```shell
 cd "diretorio de sua preferencia" 
-git clone git@github.com:KSouzaEng/GoRegister.git
+git clone https://github.com/Dalescio/CreditoParaTodxs.git
 ```
+Será necessário executar os seguintes comandos:
+-
+-cp en.exemplo .env
+-É necessário criar um banco de dados no Laragon:
+    -Clicando em **Banco de Dados**
+    -Apertar no canto inferior esquerdo **Novo**
+    -Apertar em **Abrir**
+    -Clicar com o botão direito em **Unnamed**
+    -Passar o mouse em cima de **Criar novo** e depois apertar em **Banco de dados**
+    -Botar o nome como **banco** (tudo minúsculo) e clicar em **OK**
+
 
 ## Construção 
 
