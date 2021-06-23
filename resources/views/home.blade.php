@@ -89,6 +89,9 @@
             font-size: 70px;
             margin-top: -20px
         }
+        input[type="range"]::-moz-range-progress {
+            background-color: #6246EA; 
+            }
         
     </style>
 </head>
