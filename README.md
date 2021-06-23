@@ -12,6 +12,10 @@ O **CréditoParaTodxs** é uma aplicação desenvolvida em **PHP** que consiste 
 - Laravel 6.20.26
 - JQuery 3.3.1
 
+## Desenvolvimento da interface
+
+- Projeto inicial desenvolvido no aplicativo AdobeXD
+- [Interface inicial](https://github.com/Dalescio/CreditoParaTodxs)
 ## Começando..
 
 Para executar o projeto, será necessário instalar os seguintes programas:
@@ -50,5 +54,6 @@ Será necessário executar os seguintes comandos:
 - Digitar no terminal do Visual Studio **php artisan migrate**
 - Digitar no terminal do Visual Studio **php artisan serve**
 - Clicar no link que aparecerá com **Crt+Click**
+
 
 
