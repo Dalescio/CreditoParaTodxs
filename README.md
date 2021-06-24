@@ -8,7 +8,11 @@ O **CréditoParaTodxs** é uma aplicação desenvolvida em **PHP** que consiste 
 - PHP 7.2.5|8.0
 - HTML 5
 - CSS 3
+
+## Banco de dados ultilizado
 - MySQL
+
+## Frameworks usados
 - Laravel 6.20.26
 - JQuery 3.3.1
 
